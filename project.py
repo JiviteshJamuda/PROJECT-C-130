@@ -2,9 +2,10 @@ import pandas as pd
 import csv
 
 df = pd.read_csv('merged_data.csv')
+print(df.head())
 # print(df.shape)
 del df['luminosity']
-del df['Serial number']
+df.dropna()
 # print(df.shape)
 # print(list(df))
 
